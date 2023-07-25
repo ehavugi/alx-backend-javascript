@@ -1,8 +1,7 @@
 export default function returnHowManyArguments(...par) {
-	let total = 0;
-  	for (const arg of par) {
-    		total += 1;
-  		}
-  	return total;
-
+  const total = 0;
+  if (par) {
+    return par.length;
+  }
+  return total;
 }
