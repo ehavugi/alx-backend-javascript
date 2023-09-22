@@ -1,4 +1,4 @@
-const calculateNumber = require("./1-calcul.js");
+const calculateNumber = require("./2-calcul_chai.js");
 const chai = require('chai');
 const expect = chai.expect;
 
@@ -25,8 +25,7 @@ describe('calculateNumber()', function() {
  
   tests.forEach(({args, expected}) => {
   it(`calculateNumber`, function () {
-    const res = calculateNumber(args[0], args[1], args[2]);
-    expect(res).to.equal(expected);
+    expect(calculateNumber(args[0], args[1], args[2])).to.equal(expected);
   });
   });
 });
