@@ -4,8 +4,8 @@ const express = require('express');
 const app = express();
 
 // business logic
-app.get('/',(req, res) => {
-  res.send("Hello Holberton School!");
+app.get('/', (req, res) => {
+  res.send('Hello Holberton School!');
 });
 
 app.listen(1245, () => {
